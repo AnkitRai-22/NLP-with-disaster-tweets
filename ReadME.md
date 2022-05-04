@@ -62,3 +62,4 @@ Step 9 : Enable Kale by clicking on the Kale menu option in the left-side panel 
 Step 10 : Click the “Run and Compile” button at the bottom of the Kale menu then click to view the pipeline in real-time.
 
 
+## Check out the blog to learn more! Link to be added soon!
