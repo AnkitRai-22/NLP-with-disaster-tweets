@@ -7,10 +7,10 @@ Now we have two diiferent ways of running both the vanilla and the Kale version.
 
 ## Running the vanilla notebook - KFP Pipeline Setup
 
-The initial few steps to run either notebooks are exactly the same. Then after the fourth step there is a big difference on how to convert the original competition notebook into a kubeflow pipeline, this can be clearly seen below. <br>
+The initial few steps to run either notebooks are exactly the same. Then after the fourth step there is a big difference on how to convert the original competition notebook into a kubeflow pipeline, this can be clearly seen below:
 
 1. Go to Kubeflow Dashboard and on the left panel click on Notebooks.
-<br>
+
 2. Click on the “+ New Notebook” button on the top right and create a notebook by giving it a name. Change the Workspace volume from from 5 GB to 50 GB, and change the requested memory to 6 GB.
 
 3. After the set up is done, click on the Connect button next to the notebook you just created. It will take you to a JupyterLab.
@@ -21,7 +21,7 @@ The initial few steps to run either notebooks are exactly the same. Then after t
  ```$ git clone https://github.com/AnkitRai-22/natural-language-processing-with-disaster-tweets-kaggle-competition```
 
 5. After succesfully cloning the repo, double click on the "natural-language-processing-with-disaster-tweets-kaggle-competition" to go to the github repo. Then open the notebook named "natural-language-processing-with-disaster-tweets-kfp.ipynb" by double-clicking on this name in the left hand directory structure, and to run it click on the "restart the whole kernel and re-reun the whole notebook"(fast-forward logo-ed) button in the top menu of the notebook.
-<br>
+
 6. View run details immediately after submitting the pipeline.
 <br><br>  
 The differences in defining the KFP notebook from the original one require us to make note of the following changes: <br> <br>
@@ -49,10 +49,10 @@ This function takes mainly three arguments. The first one is the name of the fun
 
 ## Running the Kale Version
 
-The steps to deploy the pipeline using Kale are as follows:<br><br>
+The steps to deploy the pipeline using Kale are as follows:
 
 1. Go to Kubeflow Dashboard and on the left panel click on Notebooks.
-<br>
+
 2. Click on the “+ New Notebook” button on the top right and create a notebook by giving it a name. Change the Workspace volume from from 5 GB to 50 GB, and change the requested memory to 6 GB.
 
 3. After the set up is done, click on the Connect button next to the notebook you just created. It will take you to a JupyterLab.
