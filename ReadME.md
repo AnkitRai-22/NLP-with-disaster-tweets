@@ -3,8 +3,8 @@
 The aim of this git page is to correctly guide users through a tutorial of converting https://www.kaggle.com/c/nlp-getting-started competition notebook into a kubeflow pipeline.<br><br> 
 There are 3 different ipynb files in this repo. The one ending with -orig is the original one from the competition, the one ending with -kpf uses vanilla kubeflow to create the pipeline and the one ending with -kale uses kale to build the kubeflow pipeline. <br>
 <br>
-Now we have two diiferent ways of running both the vanilla and the Kale version. The instructions to run the notebooks are as follows:
-<br>
+Now we have two diiferent ways of running both the vanilla and the Kale version. The instructions to run the notebooks are as follows-
+
 ## Running the vanilla notebook - KFP Pipeline Setup
 
 The initial few steps to run either notebooks are exactly the same. Then after the fourth step there is a big difference on how to convert the original competition notebook into a kubeflow pipeline, this can be clearly seen below. <br>
