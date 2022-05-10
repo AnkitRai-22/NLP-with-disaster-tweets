@@ -53,16 +53,16 @@ The steps to deploy the pipeline using Kale are as follows:<br><br>
 
 1. Go to Kubeflow Dashboard and on the left panel click on Notebooks.
 <br>
-Step 2 : Click on the “+ New Notebook” button on the top right and create a notebook by giving it a name. Change the Workspace volume from from 5 GB to 50 GB, and change the requested memory to 6 GB.
+2. Click on the “+ New Notebook” button on the top right and create a notebook by giving it a name. Change the Workspace volume from from 5 GB to 50 GB, and change the requested memory to 6 GB.
 
-Step 3 : After the set up is done, click on the Connect button next to the notebook you just created. It will take you to a JupyterLab.
+3. After the set up is done, click on the Connect button next to the notebook you just created. It will take you to a JupyterLab.
 
 
-Step 4 : In the JupyterLab launcher start a new terminal session to clone the github repo. In the terminal enter the following commands:
+4. In the JupyterLab launcher start a new terminal session to clone the github repo. In the terminal enter the following commands:
 
 ```$ git clone https://github.com/AnkitRai-22/natural-language-processing-with-disaster-tweets-kaggle-competition```
 
-Step 5 : After succesfully cloning the repo, double click on the "natural-language-processing-with-disaster-tweets-kaggle-competition" to go to the github repo. Then open the notebook named "natural-language-processing-with-disaster-tweets-kale.ipynb" by double-clicking on this name in the left hand directory structure. To run it first click on the first cell and run the code block containing the following code 
+5. After succesfully cloning the repo, double click on the "natural-language-processing-with-disaster-tweets-kaggle-competition" to go to the github repo. Then open the notebook named "natural-language-processing-with-disaster-tweets-kale.ipynb" by double-clicking on this name in the left hand directory structure. To run it first click on the first cell and run the code block containing the following code 
 ```pip install -r requirements.txt ```
 then click on the "restart the whole kernel and re-reun the whole notebook"(fast-forward logo-ed) button in the top menu of the notebook.
 
