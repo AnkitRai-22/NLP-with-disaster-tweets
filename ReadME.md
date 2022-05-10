@@ -18,7 +18,7 @@ Step 3 : After the set up is done, click on the Connect button next to the noteb
 
 Step 4 : In the JupyterLab launcher start a new terminal session to clone the github repo. In the terminal enter the following commands:
 
- $ git clone https://github.com/AnkitRai-22/natural-language-processing-with-disaster-tweets-kaggle-competition 
+ ```$ git clone https://github.com/AnkitRai-22/natural-language-processing-with-disaster-tweets-kaggle-competition```
 
 Step 5 : After succesfully cloning the repo, double click on the "natural-language-processing-with-disaster-tweets-kaggle-competition" to go to the github repo. Then open the notebook named "natural-language-processing-with-disaster-tweets-kfp.ipynb" by double-clicking on this name in the left hand directory structure, and to run it click on the "restart the whole kernel and re-reun the whole notebook"(fast-forward logo-ed) button in the top menu of the notebook.
 <br>
@@ -30,9 +30,9 @@ The differences in defining the KFP notebook from the original one require us to
 
  - Converting the Functions into Components : We use: 
 
-'''
+```
 kfp.components.create_component_from_func()
-'''
+```
 
 This function takes mainly three arguments. The first one is the name of the function which is to be converted into a component, the second one is the list of packages to be installed as a list under the argument name as packages_to_install=[], and the final argument is the output_component_file which is defined by us as a .yaml file.
 
@@ -40,7 +40,7 @@ This function takes mainly three arguments. The first one is the name of the fun
  - Defining Pipeline function : We now define pipeline using @dsl.pipeline to define the pipeline. We add a name and description to the pipeline, and then define a function for this pipeline, which has arguments passed on, which are used as input to the components created earlier. We then pass the output of one component as input argument to the next component. 
 
 
- - Running the pipeline : To run the pipeline we use **kfp.Client()**, and create an object of the class and then use **create_run_from_pipeline_func** function to run the pipeline by passing it the name of the pipeline and the arguments which are required as input.
+ - Running the pipeline : To run the pipeline we use ```kfp.Client()```, and create an object of the class and then use ```create_run_from_pipeline_func``` function to run the pipeline by passing it the name of the pipeline and the arguments which are required as input.
 
 
 <br><br>
@@ -58,10 +58,10 @@ Step 3 : After the set up is done, click on the Connect button next to the noteb
 
 Step 4 : In the JupyterLab launcher start a new terminal session to clone the github repo. In the terminal enter the following commands:
 
-$ git clone https://github.com/AnkitRai-22/natural-language-processing-with-disaster-tweets-kaggle-competition
+```$ git clone https://github.com/AnkitRai-22/natural-language-processing-with-disaster-tweets-kaggle-competition```
 
 Step 5 : After succesfully cloning the repo, double click on the "natural-language-processing-with-disaster-tweets-kaggle-competition" to go to the github repo. Then open the notebook named "natural-language-processing-with-disaster-tweets-kale.ipynb" by double-clicking on this name in the left hand directory structure. To run it first click on the first cell and run the code block containing the following code 
-''' pip install -r requirements.txt '''
+```pip install -r requirements.txt ```
 then click on the "restart the whole kernel and re-reun the whole notebook"(fast-forward logo-ed) button in the top menu of the notebook.
 
 
