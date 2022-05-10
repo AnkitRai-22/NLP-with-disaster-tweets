@@ -1,10 +1,12 @@
+# Objective
+<br>
 There are 3 different ipynb files in this repo. The one ending with -orig is the original one from the competition, the one ending with -kpf uses vanilla kubeflow to create the pipeline and the one ending with -kale uses kale to build the kubeflow pipeline. <br>
 <br>
 Now we have two diiferent ways of running both the vanilla and the Kale version. The instructions to run the notebooks are as follows:
 <br>
 # Running the vanilla notebook
 
-The steps for creating a Kubeflow Pipeline using KPF are as follows: <br> <br>
+The steps to run the vanilla version just require The steps for creating a Kubeflow Pipeline using KPF are as follows: <br> <br>
 
 Step 1 : Defining Functions - The function should be defined in such a way that every library which is being used inside it should be imported inside it. 
 
@@ -41,14 +43,10 @@ Step 3 : After the set up is done, click on the Connect button next to the noteb
 
 Step 4 : In the JupyterLab launcher start a new terminal session to clone the github repo. In the terminal enter the following commands:
 
-$ git clone https://github.com/AnkitRai-22/NLP-with-disaster-tweets
+$ git clone https://github.com/AnkitRai-22/natural-language-processing-with-disaster-tweets-kaggle-competition
 
-Step 5 : Navigate to the NLP-with-disaster-tweets directory and execute:
 
-$ wget http://nlp.stanford.edu/data/glove.6B.zip <br>
-$ unzip -q glove.6B.zip
-
-Step 6 : Open the python notebook named: nlp_getting_started.ipynb in the JupyterLab launcher.
+Step 4 : Open the python notebook named: nlp_getting_started.ipynb in the JupyterLab launcher.
 
 Step 7 : After opening of the notebook run the first cell with the following code:
 
