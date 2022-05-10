@@ -5,7 +5,7 @@ There are 3 different ipynb files in this repo. The one ending with -orig is the
 <br>
 Now we have two diiferent ways of running both the vanilla and the Kale version. The instructions to run the notebooks are as follows:
 <br>
-# Running the vanilla notebook - KFP Pipeline Setup
+## Running the vanilla notebook - KFP Pipeline Setup
 
 The initial few steps to run either notebooks are exactly the same. Then after the fourth step there is a big difference on how to convert the original competition notebook into a kubeflow pipeline, this can be clearly seen below. <br>
 
@@ -30,7 +30,7 @@ The differences in defining the KFP notebook from the original one require us to
 
  - Converting the Functions into Components - We use: 
 
-kfp.components.create_component_from_func()
+<mark>kfp.components.create_component_from_func()</mark>
 
 This function takes mainly three arguments. The first one is the name of the function which is to be converted into a component, the second one is the list of packages to be installed as a list under the argument name as packages_to_install=[], and the final argument is the output_component_file which is defined by us as a .yaml file.
 
@@ -42,17 +42,14 @@ This function takes mainly three arguments. The first one is the name of the fun
 
 
 <br><br>
-# Running the Kale Version
+
+## Running the Kale Version
 
 The steps to deploy the pipeline using Kale are as follows:<br><br>
 
 Step 1 : Go to Kubeflow Dashboard and on the left panel click on Notebooks.
-
-
-Step 2 : Click on the “+ New Notebook” button on the top right and create a notebook by giving it a name. Change the storage for the volume from from 5 GB to 50 GB.
-
-
-
+<br>
+Step 2 : Click on the “+ New Notebook” button on the top right and create a notebook by giving it a name. Change the Workspace volume from from 5 GB to 50 GB, and change the requested memory to 6 GB.
 
 Step 3 : After the set up is done, click on the Connect button next to the notebook you just created. It will take you to a JupyterLab.
 
@@ -61,19 +58,7 @@ Step 4 : In the JupyterLab launcher start a new terminal session to clone the gi
 
 $ git clone https://github.com/AnkitRai-22/natural-language-processing-with-disaster-tweets-kaggle-competition
 
-
-Step 4 : Open the python notebook named: nlp_getting_started.ipynb in the JupyterLab launcher.
-
-Step 7 : After opening of the notebook run the first cell with the following code:
-
-pip install -r requirements.txt
-
-Step 8 : Restart the kernel
-
-Step 9 : Enable Kale by clicking on the Kale menu option in the left-side panel and give a name and a description to the pipeline. The video link for creating the pipeline is here. This should help in using Kale UI.
-
-
-Step 10 : Click the “Run and Compile” button at the bottom of the Kale menu then click to view the pipeline in real-time.
+Step 5 : After succesfully cloning the repo, double click on the "natural-language-processing-with-disaster-tweets-kaggle-competition" to go to the github repo. Then open the notebook named "natural-language-processing-with-disaster-tweets-kale.ipynb" by double-clicking on this name in the left hand directory structure. To run it first click on the first cell and run the code block containing the following code <mark> pip install -r requirements.txt </mark>, then click on the "restart the whole kernel and re-reun the whole notebook"(fast-forward logo-ed) button in the top menu of the notebook.
 
 
 ## Check out the blog to learn more! Link to be added soon!
