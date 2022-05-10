@@ -67,5 +67,7 @@ The steps to deploy the pipeline using Kale are as follows:
 ```pip install -r requirements.txt ```
 then click on the "restart the whole kernel and re-reun the whole notebook"(fast-forward logo-ed) button in the top menu of the notebook.
 
-
+![Third Image](https://github.com/AnkitRai-22/natural-language-processing-with-disaster-tweets-kaggle-competition/blob/main/images/Screenshot%20(257).png)
+![Fourth Image](https://github.com/AnkitRai-22/natural-language-processing-with-disaster-tweets-kaggle-competition/blob/main/images/Screenshot%20(258).png)
+![Fifth Image](https://github.com/AnkitRai-22/natural-language-processing-with-disaster-tweets-kaggle-competition/blob/main/images/Screenshot%20(259).png)
 ## Check out the blog to learn more! Link to be added soon!
