@@ -3,6 +3,9 @@
 The aim of this git page is to correctly guide users through a tutorial of converting https://www.kaggle.com/c/nlp-getting-started competition notebook into a kubeflow pipeline.<br><br> 
 There are 3 different ipynb files in this repo. The one ending with -orig is the original one from the competition, the one ending with -kpf uses vanilla kubeflow to create the pipeline and the one ending with -kale uses kale to build the kubeflow pipeline. <br>
 <br>
+
+If you do not already have Kubeflow already installed, you can obtain a free 14-day trial of Kubeflow as a Service here: https://www.arrikto.com/kubeflow-as-a-service/
+<br>
 Now we have two diiferent ways of running both the vanilla and the Kale version. The instructions to run the notebooks are as follows-
 
 ## Running the vanilla notebook - KFP Pipeline Setup
@@ -28,7 +31,7 @@ The differences in defining the KFP notebook from the original one require us to
 
  - Defining Functions : The function should be defined in such a way that every library which is being used inside it should be imported inside it. 
 
- - Passing data between components :  To pass big data files the best way is to use KPF components such as InputPath() and OutputPath() which store the location of the input and output files(generally we use this for big files such as CSV or big TEXT files). To download the data the best way is to pass an url and download it, use it in the function and store the output as a pickle file in the OutputPath() location and pass the OutputPath() as InputPath() to the next component and then extract the contents of the pickle file.
+ - Passing data between components :  To pass big data files the best way is to use KPF components such as ```InputPath()``` and ```OutputPath()``` which store the location of the input and output files(generally we use this for big files such as CSV or big TEXT files). To download the data the best way is to pass an url and download it, use it in the function and store the output as a pickle file in the ```OutputPath()``` location and pass the ```OutputPath()``` as ```InputPath()``` to the next component and then extract the contents of the pickle file.
 
  - Converting the Functions into Components : We use: 
 
@@ -36,7 +39,7 @@ The differences in defining the KFP notebook from the original one require us to
 kfp.components.create_component_from_func()
 ```
 
-This function takes mainly three arguments. The first one is the name of the function which is to be converted into a component, the second one is the list of packages to be installed as a list under the argument name as packages_to_install=[], and the final argument is the output_component_file which is defined by us as a .yaml file.
+This function takes mainly three arguments. The first one is the name of the function which is to be converted into a component, the second one is the list of packages to be installed as a list under the argument name as ```packages_to_install=[]```, and the final argument is the output_component_file which is defined by us as a .yaml file.
 
 
  - Defining Pipeline function : We now define pipeline using @dsl.pipeline to define the pipeline. We add a name and description to the pipeline, and then define a function for this pipeline, which has arguments passed on, which are used as input to the components created earlier. We then pass the output of one component as input argument to the next component. 
@@ -70,4 +73,4 @@ then click on the "restart the whole kernel and re-reun the whole notebook"(fast
 ![Third Image](https://github.com/AnkitRai-22/natural-language-processing-with-disaster-tweets-kaggle-competition/blob/main/images/Screenshot%20(257).png)
 ![Fourth Image](https://github.com/AnkitRai-22/natural-language-processing-with-disaster-tweets-kaggle-competition/blob/main/images/Screenshot%20(258).png)
 ![Fifth Image](https://github.com/AnkitRai-22/natural-language-processing-with-disaster-tweets-kaggle-competition/blob/main/images/Screenshot%20(259).png)
-## Check out the blog to learn more! Link to be added soon!
+
