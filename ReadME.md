@@ -5,7 +5,7 @@ There are 3 different ipynb files in this repo. The one ending with -orig is the
 <br>
 
 If you do not already have Kubeflow already installed, you can obtain a free 14-day trial of Kubeflow as a Service here: https://www.arrikto.com/kubeflow-as-a-service/
-<br>
+<br><br>
 Now we have two diiferent ways of running both the vanilla and the Kale version. The instructions to run the notebooks are as follows-
 
 ## Running the vanilla notebook - KFP Pipeline Setup
@@ -42,7 +42,7 @@ kfp.components.create_component_from_func()
 This function takes mainly three arguments. The first one is the name of the function which is to be converted into a component, the second one is the list of packages to be installed as a list under the argument name as ```packages_to_install=[]```, and the final argument is the output_component_file which is defined by us as a .yaml file.
 
 
- - Defining Pipeline function : We now define pipeline using @dsl.pipeline to define the pipeline. We add a name and description to the pipeline, and then define a function for this pipeline, which has arguments passed on, which are used as input to the components created earlier. We then pass the output of one component as input argument to the next component. 
+ - Defining Pipeline function : We now define pipeline using ```@dsl.pipeline``` to define the pipeline. We add a name and description to the pipeline, and then define a function for this pipeline, which has arguments passed on, which are used as input to the components created earlier. We then pass the output of one component as input argument to the next component. 
 
 
  - Running the pipeline : To run the pipeline we use ```kfp.Client()```, and create an object of the class and then use ```create_run_from_pipeline_func``` function to run the pipeline by passing it the name of the pipeline and the arguments which are required as input.
