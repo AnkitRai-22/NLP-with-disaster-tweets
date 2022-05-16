@@ -50,6 +50,8 @@ This function takes mainly three arguments. The first one is the name of the fun
 
 ![First Image](https://github.com/AnkitRai-22/natural-language-processing-with-disaster-tweets-kaggle-competition/blob/main/images/Screenshot%20(254).png)
 ![Second Iamge](https://github.com/AnkitRai-22/natural-language-processing-with-disaster-tweets-kaggle-competition/blob/main/images/Screenshot%20(255).png)
+The final pipeline looks as shown below:
+![Pipeline Iamge](https://github.com/AnkitRai-22/natural-language-processing-with-disaster-tweets-kaggle-competition/blob/main/images/Screenshot%20(255).png)
 
 ## Running the Kale Version
 
