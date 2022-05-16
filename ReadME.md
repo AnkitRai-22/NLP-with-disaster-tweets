@@ -55,6 +55,26 @@ The final pipeline looks as shown below:<br>
 
 ## Running the Kale Version
 
+### Understanding Kale Tags
+
+With Kale you annotate cells (which are logical groupings of code) inside your Jupyter Notebook with tags. These tags tell Kuebflow how to interpret the code contained in the cell, what dependencies exist and what functionality is required to execute the cell.
+<br><br>
+### Step 1: Annotate the notebook with Kale tags
+
+- In the left-hand sidebar of your Notebook, click on the Kale logo and enable it
+- After enabling Kale, give the pipeline a name and description
+- Next, click on the edit button on the right-hand side of each code block and select the cell-type for the cell, add a name to the cell and select the name of the pipeline step it depends on
+- Select ```pipeline_step``` from cell-type for all pipeline steps and select ```skip``` as cell-type for cells which you want to skip in the pipeline
+- **Note:** To make sure the pipeline works perfectly don’t forget to add the name of the component on which it depends. 
+
+For example, in the screenshot below we annotate the code block with ```class_distribution``` and specify that it depends on the ```load_data``` step.
+![Example Annotation Image](https://github.com/AnkitRai-22/natural-language-processing-with-disaster-tweets-kaggle-competition/blob/main/images/Screenshot%20(265).png)
+
+<br><br>
+Here’s the complete list of annotations for the Notebook along with the steps on which they are dependent on:<br><br>
+![Table Annotation Image](https://github.com/AnkitRai-22/natural-language-processing-with-disaster-tweets-kaggle-competition/blob/main/images/Screenshot%20(269).png)
+
+### Step 2: Running the Kubeflow pipeline
 The steps to deploy the pipeline using Kale are as follows:
 
 1. Go to Kubeflow Dashboard and on the left panel click on Notebooks.
