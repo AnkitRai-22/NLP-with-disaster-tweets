@@ -72,7 +72,7 @@ For example, in the screenshot below we annotate the code block with ```class_di
 
 <br><br>
 Here’s the complete list of annotations for the Notebook along with the steps on which they are dependent on:<br><br>
-![Table Annotation Image](https://github.com/AnkitRai-22/natural-language-processing-with-disaster-tweets-kaggle-competition/blob/main/images/Screenshot%20(269).png)
+![Table Annotation Image](https://github.com/AnkitRai-22/natural-language-processing-with-disaster-tweets-kaggle-competition/blob/main/images/Screenshot%20(272).png)
 
 ### Step 2: Running the Kubeflow pipeline
 The steps to deploy the pipeline using Kale are as follows:
@@ -92,6 +92,5 @@ The steps to deploy the pipeline using Kale are as follows:
 ```pip install -r requirements.txt ```
 then click on the "restart the whole kernel and re-rerun the whole notebook"(fast-forward logo-ed) button in the top menu of the notebook.
 
-![Third Image](https://github.com/AnkitRai-22/natural-language-processing-with-disaster-tweets-kaggle-competition/blob/main/images/Screenshot%20(257).png)
-![Fourth Image](https://github.com/AnkitRai-22/natural-language-processing-with-disaster-tweets-kaggle-competition/blob/main/images/Screenshot%20(258).png)
-![Fifth Image](https://github.com/AnkitRai-22/natural-language-processing-with-disaster-tweets-kaggle-competition/blob/main/images/Screenshot%20(259).png)
+![Third Image](https://github.com/AnkitRai-22/natural-language-processing-with-disaster-tweets-kaggle-competition/blob/main/images/Screenshot%20(270).png)
+![Fourth Image](https://github.com/AnkitRai-22/natural-language-processing-with-disaster-tweets-kaggle-competition/blob/main/images/Screenshot%20(271).png)
